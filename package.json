@@ -11,6 +11,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.13",
     "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-remark": "^2.1.12",
     "gatsby-transformer-sharp": "^2.1.4",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
@@ -32,6 +33,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ihatetoast/gatsby-needlenoses"
-  }
+    "url": "git+https://github.com/ihatetoast/gatsby-needlenoses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ihatetoast/gatsby-needlenoses/issues"
+  },
+  "homepage": "https://github.com/ihatetoast/gatsby-needlenoses#readme",
+  "main": "gatsby-browser.js"
 }
