@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Needlenoses',
+    description: 'a sighthound information site',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -27,6 +28,13 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
   ],
 };
