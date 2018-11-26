@@ -1,5 +1,19 @@
 import React from 'react';
 import { StaticQuery, graphql, Link } from 'gatsby';
+import styled from 'styled-components';
+
+const ArchiveList = styled.ul`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  a {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu,
+      Helvetica Neue, sans-serif;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: #7f319a;
+  }
+`;
 const POST_ARCHIVE_QUERY = graphql`
   query PostArchiveQuery {
     allMarkdownRemark(
@@ -25,7 +39,7 @@ const Archive = () => (
       <>
         <aside>
           <h3>Archive:</h3>
-          <ul>
+          <ArchiveList>
             {allMarkdownRemark.edges.map(edge => {
               return (
                 <li key={edge.node.frontmatter.slug}>
@@ -35,7 +49,7 @@ const Archive = () => (
                 </li>
               );
             })}
-          </ul>
+          </ArchiveList>
         </aside>
       </>
     )}

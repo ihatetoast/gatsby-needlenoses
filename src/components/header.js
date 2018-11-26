@@ -1,57 +1,57 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import ihatetoastLogo from '../images/IHT.png';
 
+const HeaderWrapper = styled.div`
+  background: #7f319a;
+  margin-bottom: 1.45rem;
+`;
+const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1rem;
+  h1 {
+    margin: 2rem;
+  }
+`;
+const LogoWrapper = styled.div`
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.5em.2em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 80%;
+    height: 80;
+  }
+`;
+
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <HeaderWrapper>
+    <HeaderContainer>
+      <LogoWrapper>
+        <img src={ihatetoastLogo} alt="logo" />
+      </LogoWrapper>
+      <h1>
         <Link
           to="/"
           style={{
             color: 'white',
-            textDecoration: 'none',
           }}
         >
-          <div
-            style={{
-              width: '4em',
-              height: '4em',
-              backgroundColor: 'white',
-              borderRadius: '50%',
-              padding: '.5em .2em 0em',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <img
-              style={{
-                width: '80%',
-                height: '80%',
-              }}
-              src={ihatetoastLogo}
-              alt="logo"
-            />
-          </div>
-
           {siteTitle}
         </Link>
       </h1>
-    </div>
-  </div>
+    </HeaderContainer>
+  </HeaderWrapper>
 );
 
 export default Header;
