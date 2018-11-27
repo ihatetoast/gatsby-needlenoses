@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Needlenoses',
+    title: 'Needlenoses and Bubblebooties',
     description: 'a sighthound information site',
+    siteUrl: `https://needlenoses.netlify.com/`,
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -13,13 +15,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Needlenoses and Bubblebooties',
+        short_name: 'Needlenoses',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#4e1162',
+        theme_color: '#4e1162',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.ico', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

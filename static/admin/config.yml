@@ -1,6 +1,7 @@
 backend:
   name: github
   branch: master
+  repo: ihatetoast/gatsby-needlenoses
 
 media_folder: static/img
 public_folder: /img
