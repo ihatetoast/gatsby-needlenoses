@@ -5,23 +5,22 @@ import styled from 'styled-components';
 import ihatetoastLogo from '../images/IHT.png';
 
 const HeaderWrapper = styled.div`
-  background: #7f319a;
-  margin-bottom: 1.45rem;
+  background: #4e1162;
 `;
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: 960px;
-  padding: 1rem;
+  padding: 0.5rem;
   h1 {
     margin: 2rem;
   }
 `;
 const LogoWrapper = styled.div`
-  width: 7rem;
-  height: 7rem;
+  width: 3rem;
+  height: 3rem;
   background-color: white;
   border-radius: 50%;
   padding: 0.5em.2em 0em;
@@ -30,7 +29,6 @@ const LogoWrapper = styled.div`
   align-items: center;
   img {
     width: 80%;
-    height: 80;
   }
 `;
 
